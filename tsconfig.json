@@ -2,10 +2,14 @@
   "compilerOptions": {
     "target": "es6",
     "noImplicitAny": true,
-    "allowSyntheticDefaultImports": true,
     "sourceMap": true,
     "allowJs": false,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "module": "commonjs",
+    "outDir": "./build/",
+    "preserveConstEnums": true,
+    "removeComments": true
   },
-  "exclude": ["node_modules"],
-  "files": ["src/index.ts"]
+  "include": ["src/typings.d.ts", "src/index.tsx"]
 }
