@@ -1,15 +1,8 @@
 import React from "react";
-import PropTypes from "prop-types";
 import styles from "./styles.css";
 
-const text = ({ value }) => <div className={styles.text}>{value}</div>;
+type Props = {
+  value: string
+}
 
-text.propTypes = {
-  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-};
-
-text.defaultProps = {
-  value: "",
-};
-
-export default text;
+export default ({ value }: Props) => <div className={styles.text}>{value}</div>;

@@ -2,7 +2,11 @@ import React from "react";
 import Text from "../Text";
 import Button from "../Button";
 
-export default class App extends React.PureComponent {
+type State = {
+  value: number
+}
+
+export default class App extends React.PureComponent<{}, State> {
   state = {
     value: 0,
   };
